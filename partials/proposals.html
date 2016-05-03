@@ -1,0 +1,49 @@
+<h1>Open Proposals</h1>
+
+<form ng-submit="submit()" class="form-inline">
+  <div class="text-center">
+    <div class="form-group">
+      <div ng-class="{'has-error' : error, 'has-success': success}" class="input-group">
+        <div class="input-group-addon">
+          <li class="fa fa-keyboard-o"></li>
+        </div>
+        <div class="input-group-addon">Account</div>
+        <input type="text" ng-model="account" placeholder="Account Name" class="form-control"/>
+      </div>
+    </div>
+    <button class="btn btn-primary">Verify</button>
+  </div>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Expiration</th>
+        <th>Operation Data</th>
+      </tr>
+      <tbody>
+        <tr ng-repeat="proposal in proposals" ng-click="go(proposal)">
+          <td> <a href="#/proposal/{{chain}}/{{proposal.id}}">{{proposal.id}}</a></td>
+          <td>{{proposal.transaction.expiration}}</td>
+          <td> 
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Amount</th>
+                  <th>Symbol</th>
+                </tr>
+                <tr ng-repeat="operation in proposal.transaction.operations">
+                  <td>{{operation.from}}</td>
+                  <td>{{operation.to}}</td>
+                  <td>{{operation.amount}}</td>
+                  <td>{{operation.symbol}}</td>
+                </tr>
+              </thead>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </thead>
+  </table>
+</form>

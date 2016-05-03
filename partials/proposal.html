@@ -1,0 +1,51 @@
+<h1>Proposal {{proposal.id}}</h1>
+<form ng-submit="submit()" name="validationForm" class="form-inline">
+  <table class="table table-striped table-hover">
+    <tbody>
+      <tr>
+        <td>Id</td>
+        <td>{{proposal.id}}</td>
+      </tr>
+      <tr>
+        <td>Expiration</td>
+        <td>{{proposal.transaction.expiration}}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p><strong>Operations:</strong></p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Funds</th>
+              </tr>
+              <tr ng-repeat="operation in proposal.transaction.operations">
+                <td>{{operation.from}}</td>
+                <td>{{operation.to}}</td>
+                <td>{{operation.amount}} {{operation.symbol}}</td>
+              </tr>
+            </thead>
+          </table>
+        </td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="text-center">
+            <div class="form-group">
+              <div ng-class="{'has-error' : error, 'has-success': success}" class="input-group">
+                <div class="input-group-addon">
+                  <li class="fa fa-keyboard-o"></li>
+                </div>
+                <div class="input-group-addon text-center">Proposal: {{proposal.id}}</div>
+                <input type="text" name="token" ng-model="token" placeholder="Token" size="64" class="form-control"/>
+              </div>
+            </div>
+            <button class="btn btn-primary">Verify</button>
+            <p ng-class="{'bg-error' : error, 'bg-success': success}">{{error}}{{success}}</p>
+          </td>
+        </tr>
+      </tfoot>
+    </tbody>
+  </table>
+</form>
