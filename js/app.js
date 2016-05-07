@@ -22,11 +22,17 @@ app.controller('getAccountProposalsCtrl', function ($scope, $http, $routeParams,
         $http.get(api + $scope.chain + '/proposals/'+$scope.account).then(
             function(data, status) {
                     $scope.proposals = data.data;
+		    if(!data.data.length) {
+		    	$scope.warning = "No proposals available for this account!";
+		    } else {
+		    	$scope.warning = "";
+		    }
                     $scope.error = false;
                  },
             function(data, status) {
                     $scope.error = true;
                     $scope.proposals = [];
+		    $scope.warning = "Error loading account";
                  });
     };
     if ($routeParams.account) {

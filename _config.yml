@@ -6,7 +6,7 @@ description: >
   funds on the blockchain without counterparty-risk. You are always in
   control!
   
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://peermit.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://peermit.com"
 github_username:  peermit
 markdown: kramdown

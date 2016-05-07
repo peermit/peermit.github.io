@@ -1,6 +1,6 @@
 ---
 layout: default
-permlink: /privacy
+permalink: /privacy/
 ---
 
 This Privacy Policy governs the manner in which Peermit collects, uses,

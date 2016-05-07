@@ -1,6 +1,6 @@
 ---
 layout: default
-permlink: /howto/setup
+permalink: /howto/setup/
 title: Setting up Your Secured Account
 ---
 

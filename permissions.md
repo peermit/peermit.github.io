@@ -1,6 +1,6 @@
 ---
 layout: default
-permlink: /help/permissions
+permalink: /help/permissions/
 title: What are Permissions
 ---
 

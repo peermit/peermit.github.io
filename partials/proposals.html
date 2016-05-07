@@ -1,5 +1,10 @@
 <h1>Open Proposals</h1>
 
+<p>
+This page allows you to list all proposals for the provided account name on the
+<strong>{{chain | uppercase}}</strong>-network.
+</p>
+
 <form ng-submit="submit()" class="form-inline">
   <div class="text-center">
     <div class="form-group">
@@ -13,7 +18,8 @@
     </div>
     <button class="btn btn-primary">List Proposals</button>
   </div>
-  <table class="table table-striped table-hover">
+  <p>{{warning}}</p>
+  <table class="table table-striped table-hover" ng-show='proposals.length > 0'>
     <thead>
       <tr>
         <th>Id</th>

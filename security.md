@@ -1,6 +1,6 @@
 ---
 layout: default
-permlink: /security
+permalink: /security/
 title: Security Aspects
 ---
 

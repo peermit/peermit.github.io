@@ -1,6 +1,6 @@
 ---
 layout: default
-permlink: /terms
+permalink: /terms/
 ---
 
 # Peermit Terms of Use
