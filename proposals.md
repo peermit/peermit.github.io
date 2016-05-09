@@ -1,6 +1,6 @@
 ---
 layout: default
-permslink: /help/proposal/
+permalink: /help/proposal/
 title: What are Proposals
 ---
 
