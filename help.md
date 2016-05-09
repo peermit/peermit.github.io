@@ -11,6 +11,7 @@ technology and documentation about how to use our service.
 
 * [Setting up Your Secured Account](/howto/setup/)
 * [Using your Secured Account](/howto/usage/)
+* [Reclaiming Full Control Over The Your Secured Account](/howto/reclaim/)
 * [Security Aspects](/security/)
 
 ### Blockchain
