@@ -96,13 +96,14 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: darken($brand-color, 12%);
     text-decoration: none;
+    font-weight: $base-font-weight + 100;
 
     &:visited {
-        color: $brand-color;
+        color: darken($brand-color, 25%);
     }
 
     &:hover {
-        color: $text-color;
+        color: darken($brand-color, 30%);
         text-decoration: underline;
     }
 }
