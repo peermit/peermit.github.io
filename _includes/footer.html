@@ -7,8 +7,22 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Contact</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+           <i class="fa fa-gavel" aria-hidden="true"></i>
+           <a href="/imprint">imprint</a>
+          </li>
+          <li>
+           <i class="fa fa-gavel" aria-hidden="true"></i>
+           <a href="/terms">terms</a>
+          </li>
+          <li>
+           <i class="fa fa-user-secret" aria-hidden="true"></i>
+           <a href="/privacy">privacy</a>
+          </li>
+          <li>
+           <i class="fa fa-envelope" aria-hidden="true"></i>
+           <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
         </ul>
       </div>
 
@@ -21,27 +35,11 @@
           {% endif %}
           <li>
            <i class="fa fa-universal-access" aria-hidden="true"></i>
-           <span class="username">
             <a class="page-link" href="https://api.peermit.com/v1/ui/">api</a>
-           </span>
           </li>
           <li>
            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-           <span class="username">
             <a href="https://bitsharestalk.org/index.php/topic,20647.new.html#new">discussion</a>
-           </span>
-          </li>
-          <li>
-           <i class="fa fa-gavel" aria-hidden="true"></i>
-           <span class="username">
-            <a href="/terms">terms</a>
-           </span>
-          </li>
-          <li>
-           <i class="fa fa-user-secret" aria-hidden="true"></i>
-           <span class="username">
-            <a href="/terms">privacy</a>
-           </span>
           </li>
 
         </ul>
@@ -52,6 +50,9 @@
       </div>
     </div>
 
+  </div>
+   <div class="container text-center">
+    <p class="muted credit">© 2016 Peermit, All rights reserved - Peermit is a product offered by <a href="http://chainsquad.com">ChainSquad GmbH</a>
   </div>
 
 </footer>

@@ -77,6 +77,9 @@ li {
     > ol {
          margin-bottom: 0;
     }
+    p strong {
+        color: darken($brand-color, 12%);
+    }
 }
 
 

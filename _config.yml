@@ -2,11 +2,14 @@ title: Peermit.com
 email: info@peermit.com
 description: >
   Peermit.com provides the first of its kind second factor
-  authentication (2FA) service for BitShares to secure your accounts and
-  funds on the blockchain without counterparty-risk. You are always in
-  control!
+  authentication (2FA) service for graphene-based blockchains (i.e.
+  BitShares, Steem, PeerPlays) to secure your accounts and funds on the
+  blockchain without counterparty-risk. You are always in control!
   
 baseurl: ""
 url: "http://peermit.com"
 github_username:  peermit
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
